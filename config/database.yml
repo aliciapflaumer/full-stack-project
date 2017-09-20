@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<% project_name = 'books-tracker-rails-api' %>
-=======
-<% project_name = 'books-tracker-api' %>
->>>>>>> development
+<% project_name = 'book-tracker-rails-api' %>
 
 default: &default
   adapter: postgresql
