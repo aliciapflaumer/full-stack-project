@@ -19,46 +19,48 @@ Friday, September 22, 2017
 
 ## Auth functions
 
-1. [] Set up HTML for auth functions
+1. [ DONE ] Set up HTML for auth functions
 
 ## Get Sign-up working
 
 1. [ DONE ] HTML for sign-up
-2. [] events.js for sign-up
-3. [] api.js for sign-up
-4. [] ui.js for sign-up
+2. [ DONE ] events.js for sign-up
+3. [ DONE ] api.js for sign-up
+4. [ DONE ] ui.js for sign-up
 5. [] Test that you can successfully sign up via web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code DONE (Returns 201 Created as expected)
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code  to return 201
 7. [] Confirm that new user exists in back-end DB
 
 ## Get Sign-In working
 
 1. [ DONE ] HTML for sign-in
-2. [] events.js for sign-in
-3. [] api.js for sign-in
-4. [] ui.js for sign-in
+2. [ DONE ] events.js for sign-in
+3. [ DONE ] api.js for sign-in
+4. [ DONE ] ui.js for sign-in
 5. [] Test that you can sign in via web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code DONE (Returns 200 OK as expected)
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code to return 200
 
 ## Get Sign-Out working
 
 1. [ DONE ] HTML for sign-out
-2. [] events.js for sign-out
-3. [] api.js for sign-out
-4. [] ui.js for sign-out
+2. [ DONE ] events.js for sign-out
+3. [ DONE ] api.js for sign-out
+4. [ DONE ] ui.js for sign-out
 5. [] Test that you can sign out via web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code DONE (Returns 204 No Content as expected)
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code to return 204 No Content
 
 ## Get Change-Password Working
 
 1. [ DONE ] HTML for change-password
-2. [] events.js for change-password
-3. [] api.js for change-password
-4. [] ui.js for change-password
+2. [ DONE ] events.js for change-password
+3. [ DONE ] api.js for change-password
+4. [ DONE ] ui.js for change-password
 5. [] Test that you can change password via web UI (sign in with new password)
-6. [] Confirm that request ran on backend with appropriate HTTP status code
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code
 
 ## Rails Backend work
+
+September 23, 2017
 
 # User
 
