@@ -19,62 +19,64 @@ Friday, September 22, 2017
 
 ## Auth functions
 
-1. [] Set up HTML for auth functions
+1. [ DONE ] Set up HTML for auth functions
 
 ## Get Sign-up working
 
 1. [ DONE ] HTML for sign-up
-2. [] events.js for sign-up
-3. [] api.js for sign-up
-4. [] ui.js for sign-up
+2. [ DONE ] events.js for sign-up
+3. [ DONE ] api.js for sign-up
+4. [ DONE ] ui.js for sign-up
 5. [] Test that you can successfully sign up via web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code DONE (Returns 201 Created as expected)
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code  to return 201
 7. [] Confirm that new user exists in back-end DB
 
 ## Get Sign-In working
 
 1. [ DONE ] HTML for sign-in
-2. [] events.js for sign-in
-3. [] api.js for sign-in
-4. [] ui.js for sign-in
+2. [ DONE ] events.js for sign-in
+3. [ DONE ] api.js for sign-in
+4. [ DONE ] ui.js for sign-in
 5. [] Test that you can sign in via web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code DONE (Returns 200 OK as expected)
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code to return 200
 
 ## Get Sign-Out working
 
 1. [ DONE ] HTML for sign-out
-2. [] events.js for sign-out
-3. [] api.js for sign-out
-4. [] ui.js for sign-out
+2. [ DONE ] events.js for sign-out
+3. [ DONE ] api.js for sign-out
+4. [ DONE ] ui.js for sign-out
 5. [] Test that you can sign out via web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code DONE (Returns 204 No Content as expected)
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code to return 204 No Content
 
 ## Get Change-Password Working
 
 1. [ DONE ] HTML for change-password
-2. [] events.js for change-password
-3. [] api.js for change-password
-4. [] ui.js for change-password
+2. [ DONE ] events.js for change-password
+3. [ DONE ] api.js for change-password
+4. [ DONE ] ui.js for change-password
 5. [] Test that you can change password via web UI (sign in with new password)
-6. [] Confirm that request ran on backend with appropriate HTTP status code
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code
 
 ## Rails Backend work
 
+
+
 # User
 
-1. [] Scaffold user resource
-2. [] Run bin/rails db:migrate
-3. [] Test that you can add a user via rails console
-4. [] Test that you can add a user via a curl request
-5. [] Confirm that users you add via curl/console exist in database
+1. [] Test that you can add a user via rails console
+2. [] Test that you can add a user via a curl request
+3. [] Confirm that users you add via curl/console exist in database
+
+September 23, 2017
 
 # Books
 
 1. [ DONE ] Scaffold book resource
-2. [] Run bin/rails db:migrate
-3. [] Test that you can add a book via rails console
-4. [] Test that you can add a book via a curl request
-5. [] Test that you can return all of a user's books via a curl request
+2. [ DONE ] Run bin/rails db:migrate
+3. [ DONE ] Test that you can create a book via rails console
+4. [ DONE ] Test that you can create a book via a curl request
+5. [ DONE ] Test that you can get all of a user's books via a curl request
 6. [] Test that you can update a book via a curl request
 7. [] Test that you can delete a book via a curl request
 
@@ -87,17 +89,17 @@ Friday, September 22, 2017
 3. [] api.js for create book
 4. [] ui.js for create book
 5. [] Test that you can create a book via the Web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code 201
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code 201
 
 # READ (GET)
 
 1. [] HTML for get all books button
 2. [] Test that you can display a books table via the Web UI
-3. [] Confirm that request ran on backend with appropriate HTTP status code returns 200
+3. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returns 200
 
 # DELETE
 
-1. [] Delete a book button on table on backend
+1. [] Create a delete button on table on backend
 2. [] Confirm that request ran on backend with appropriate HTTP status code returning 204
 3. Confirm that the book no longer exists in the backend DB
 
