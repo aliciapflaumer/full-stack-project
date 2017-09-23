@@ -2,28 +2,28 @@
 
 Friday, September 22, 2017
 
-• [ DONE ] Download front-end template, set up repo and directory named gotReads-front-end
+1. [ DONE ] Download front-end template, set up repo and directory named gotReads-front-end
 
-• [] Test that grunt server is working
+2. [ DONE ] Test that grunt server is working
 
-• [ DONE ] Download back-end template, set up repo and directory named gotReads-backend
+3. [ DONE ] Download back-end template, set up repo and directory named gotReads-backend
 
-• [] Test that bin/rails server is working
+4. [ DONE ] Test that bin/rails server is working
 
-• [] Get gh-pages set up, push to it, and test to see that pages are live on Github Pages.
+5. [] Get gh-pages set up, push to it, and test to see that pages are live on Github Pages.
 
-• [ DONE ] Get Heroku set up, push to it, and test to see that it is live.
+6. [ DONE ] Get Heroku set up, push to it, and test to see that it is live.
   • [ DONE ] Set up rails app with template
 
-• [] Make sure bin/rails server and bin/rails console both work.
+7. [ DONE ] Make sure bin/rails server and bin/rails console both work.
 
 ## Auth functions
 
-• [] Set up HTML for auth functions
+1. [] Set up HTML for auth functions
 
 ## Get Sign-up working
 
-1. [] HTML for sign-up
+1. [ DONE ] HTML for sign-up
 2. [] events.js for sign-up
 3. [] api.js for sign-up
 4. [] ui.js for sign-up
@@ -33,7 +33,7 @@ Friday, September 22, 2017
 
 ## Get Sign-In working
 
-1. [] HTML for sign-in
+1. [ DONE ] HTML for sign-in
 2. [] events.js for sign-in
 3. [] api.js for sign-in
 4. [] ui.js for sign-in
@@ -42,7 +42,7 @@ Friday, September 22, 2017
 
 ## Get Sign-Out working
 
-1. [] HTML for sign-out
+1. [ DONE ] HTML for sign-out
 2. [] events.js for sign-out
 3. [] api.js for sign-out
 4. [] ui.js for sign-out
@@ -51,7 +51,7 @@ Friday, September 22, 2017
 
 ## Get Change-Password Working
 
-1. [] HTML for change-password
+1. [ DONE ] HTML for change-password
 2. [] events.js for change-password
 3. [] api.js for change-password
 4. [] ui.js for change-password
