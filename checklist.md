@@ -60,23 +60,23 @@ Friday, September 22, 2017
 
 ## Rails Backend work
 
-September 23, 2017
+
 
 # User
 
-1. [] Scaffold user resource
-2. [] Run bin/rails db:migrate
-3. [] Test that you can add a user via rails console
-4. [] Test that you can add a user via a curl request
-5. [] Confirm that users you add via curl/console exist in database
+1. [] Test that you can add a user via rails console
+2. [] Test that you can add a user via a curl request
+3. [] Confirm that users you add via curl/console exist in database
+
+September 23, 2017
 
 # Books
 
 1. [ DONE ] Scaffold book resource
-2. [] Run bin/rails db:migrate
-3. [] Test that you can add a book via rails console
-4. [] Test that you can add a book via a curl request
-5. [] Test that you can return all of a user's books via a curl request
+2. [ DONE ] Run bin/rails db:migrate
+3. [ DONE ] Test that you can create a book via rails console
+4. [ DONE ] Test that you can create a book via a curl request
+5. [ DONE ] Test that you can get all of a user's books via a curl request
 6. [] Test that you can update a book via a curl request
 7. [] Test that you can delete a book via a curl request
 
@@ -89,17 +89,17 @@ September 23, 2017
 3. [] api.js for create book
 4. [] ui.js for create book
 5. [] Test that you can create a book via the Web UI
-6. [] Confirm that request ran on backend with appropriate HTTP status code 201
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code 201
 
 # READ (GET)
 
 1. [] HTML for get all books button
 2. [] Test that you can display a books table via the Web UI
-3. [] Confirm that request ran on backend with appropriate HTTP status code returns 200
+3. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returns 200
 
 # DELETE
 
-1. [] Delete a book button on table on backend
+1. [] Create a delete button on table on backend
 2. [] Confirm that request ran on backend with appropriate HTTP status code returning 204
 3. Confirm that the book no longer exists in the backend DB
 
