@@ -62,7 +62,7 @@ Friday, September 22, 2017
 
 # User
 
-1. [] Scaffold user
+1. [] Scaffold user resource
 2. [] Run bin/rails db:migrate
 3. [] Test that you can add a user via rails console
 4. [] Test that you can add a user via a curl request
@@ -70,7 +70,7 @@ Friday, September 22, 2017
 
 # Books
 
-1. [] Scaffold book resource
+1. [ DONE ] Scaffold book resource
 2. [] Run bin/rails db:migrate
 3. [] Test that you can add a book via rails console
 4. [] Test that you can add a book via a curl request
