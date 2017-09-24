@@ -833,3 +833,4 @@ puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
 puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
