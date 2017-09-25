@@ -2632,3 +2632,4 @@ Completed 201 Created in 59ms (Views: 3.2ms | ActiveRecord: 46.1ms)
 
 
 >>>>>>> development
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
