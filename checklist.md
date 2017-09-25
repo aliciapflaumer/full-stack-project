@@ -82,16 +82,16 @@
 
 ## CRUD Actions
 
+# September 25, 2017
+
 # Create
 
 1. [ DONE ] HTML for create book
 2. [ DONE ] events.js for create book
 3. [ DONE ] api.js for create book
 4. [ DONE ] ui.js for create book
-5. [] Test that you can create a book via the Web UI
+5. [ DONE ] Test that you can create a book via the Web UI
 6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code 201
-
-# September 25, 2017
 
 # READ (GET)
 
@@ -108,7 +108,6 @@
 2. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returning 204
 3. [ DONE ] Confirm that the book no longer exists in the backend DB
 
-# September 25, 2017
 
 # UPDATE
 
