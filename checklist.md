@@ -60,11 +60,13 @@
 
 ## Rails Backend work
 
+# September 24, 2017
+
 # User
 
-1. [] Test that you can add a user via rails console
-2. [] Test that you can add a user via a curl request
-3. [] Confirm that users you add via curl/console exist in database
+1. [ DONE ] Test that you can add a user via rails console
+2. [ DONE ] Test that you can add a user via a curl request
+3. [ DONE ] Confirm that users you add via curl/console exist in database
 
 # September 23, 2017
 
@@ -89,13 +91,16 @@
 5. [] Test that you can create a book via the Web UI
 6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code 201
 
-# September 24, 2017
+# September 25, 2017
 
 # READ (GET)
 
-1. [] HTML for get all books button
-2. [] Test that you can display a books table via the Web UI
-3. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returns 200
+1. [ DONE ] HTML for get all books button
+2. [] events.js for get book
+3. [] api.js for get book
+4. [] ui.js for get book
+5. [] Test that you can display a books table via the Web UI
+6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returns 200
 
 # DELETE
 
