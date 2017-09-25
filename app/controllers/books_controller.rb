@@ -1,10 +1,10 @@
-class BooksController < ApplicationController
-  before_action :set_book, only: [:show, :update, :destroy]
+class BooksController < ProtectedController
+  before_action :set_book, only: %i[show update destroy]
 
   # GET /books
   def index
-    @books = Book.all
-
+    # @books = Book.all
+    @books = current_user.book.all
     render json: @books
   end
 
@@ -15,7 +15,8 @@ class BooksController < ApplicationController
 
   # POST /books
   def create
-    @book = Book.new(book_params)
+    # @book = Book.new(book_params)
+    @book = current_user.books.build(book_params)
 
     if @book.save
       render json: @book, status: :created

@@ -1647,5 +1647,988 @@ Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms)
 
 
   [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+<<<<<<< HEAD
 >>>>>>> development
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+=======
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started GET "/books" for 127.0.0.1 at 2017-09-25 09:08:38 -0400
+  [1m[35m (42.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (139.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.34ms)
+Completed 200 OK in 417ms (Views: 186.9ms | ActiveRecord: 180.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started GET "/books" for 127.0.0.1 at 2017-09-25 10:00:14 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (3.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.49ms)
+Completed 200 OK in 633ms (Views: 334.8ms | ActiveRecord: 290.3ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 10:44:28 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (86.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (101.9ms)[0m  [1m[33mUPDATE "users" SET "token" = 'da39cbb104766e39bf8628de9873c6f0', "updated_at" = '2017-09-25 14:44:30.797009' WHERE "users"."id" = $1[0m  [["id", 2]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (113.61ms)
+Completed 200 OK in 1345ms (Views: 117.3ms | ActiveRecord: 342.7ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 11:00:24 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (101.7ms)[0m  [1m[33mUPDATE "users" SET "token" = '6830460d6a550146473a0df8c3feed83', "updated_at" = '2017-09-25 15:00:24.913308' WHERE "users"."id" = $1[0m  [["id", 2]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (49.85ms)
+Completed 200 OK in 413ms (Views: 54.3ms | ActiveRecord: 103.9ms)
+
+
+Started POST "/sign-up" for 127.0.0.1 at 2017-09-25 11:00:59 -0400
+Processing by UsersController#signup as */*
+  Parameters: {"credentials"=>{"email"=>"green1@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Sign up"}
+  [1m[35m (180.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (177.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green1@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (269.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "green1@email.com"], ["token", "a3e06a44447b6b76b299ff73ba95ac38"], ["password_digest", "$2a$10$Aa57.43KRkP3nR2c4TA4juxSaskgkfsLm3Ag50W.BPbdPDXHZNeK6"], ["created_at", "2017-09-25 15:01:01.221853"], ["updated_at", "2017-09-25 15:01:01.221853"]]
+  [1m[35m (27.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (41.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "green1@email.com"], ["id", 3], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (73.24ms)
+Completed 201 Created in 2909ms (Views: 326.3ms | ActiveRecord: 695.8ms)
+
+
+Started POST "/sign-up" for 127.0.0.1 at 2017-09-25 11:01:51 -0400
+Processing by UsersController#signup as */*
+  Parameters: {"credentials"=>{"email"=>"green2@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Sign up"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green2@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (43.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "green2@email.com"], ["token", "f000ac48223f05090f19eca17eb6e70a"], ["password_digest", "$2a$10$4Gh6BP5ckGI7MD3WAQelA.P79i7lQ1O6gZ0zoXd7kvv8uYq8EhEk2"], ["created_at", "2017-09-25 15:01:52.119018"], ["updated_at", "2017-09-25 15:01:52.119018"]]
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "green2@email.com"], ["id", 4], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (1.77ms)
+Completed 201 Created in 281ms (Views: 47.6ms | ActiveRecord: 87.9ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 11:02:47 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (175.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (96.0ms)[0m  [1m[33mUPDATE "users" SET "token" = '618d4097e53fc2910dcf0ccde5295d79', "updated_at" = '2017-09-25 15:02:47.287538' WHERE "users"."id" = $1[0m  [["id", 2]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (32.07ms)
+Completed 200 OK in 449ms (Views: 33.0ms | ActiveRecord: 271.1ms)
+
+
+Started DELETE "/sign-out/2" for 127.0.0.1 at 2017-09-25 11:04:25 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "618d4097e53fc2910dcf0ccde5295d79"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (28.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '92e0a65a9ca488eb1e049771037a2d80', "updated_at" = '2017-09-25 15:04:25.915331' WHERE "users"."id" = $1[0m  [["id", 2]]
+Completed 204 No Content in 218ms (ActiveRecord: 29.3ms)
+
+
+Started POST "/sign-up" for 127.0.0.1 at 2017-09-25 11:07:14 -0400
+Processing by UsersController#signup as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Sign up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (38.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "green3@email.com"], ["token", "40d6e18ef4de0a72238d572ce18c8a7e"], ["password_digest", "$2a$10$ug0lblyWBrdqz9hlvt2tBe.8eF4QlOmv6EE2IFbmL0e0xrb0m3w7e"], ["created_at", "2017-09-25 15:07:14.520324"], ["updated_at", "2017-09-25 15:07:14.520324"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "green3@email.com"], ["id", 5], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (20.87ms)
+Completed 201 Created in 298ms (Views: 85.8ms | ActiveRecord: 42.1ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 11:07:28 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (261.5ms)[0m  [1m[33mUPDATE "users" SET "token" = '3279cc162ac0016b0ccef0ff7ba192fe', "updated_at" = '2017-09-25 15:07:28.675901' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (1.88ms)
+Completed 200 OK in 438ms (Views: 5.4ms | ActiveRecord: 268.3ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 11:10:27 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (25.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '445c53b9606d8645e62497b2776e06da', "updated_at" = '2017-09-25 15:10:27.367458' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (44.13ms)
+Completed 200 OK in 291ms (Views: 51.3ms | ActiveRecord: 27.6ms)
+
+
+Started DELETE "/sign-out/5" for 127.0.0.1 at 2017-09-25 11:11:22 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "445c53b9606d8645e62497b2776e06da"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (41.5ms)[0m  [1m[33mUPDATE "users" SET "token" = '136c536316805c441d1e50307ad16719', "updated_at" = '2017-09-25 15:11:22.353411' WHERE "users"."id" = $1[0m  [["id", 5]]
+Completed 204 No Content in 223ms (ActiveRecord: 44.6ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 11:13:07 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (51.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (81.8ms)[0m  [1m[33mUPDATE "users" SET "token" = 'f158ebb817622dec17277d403a24d579', "updated_at" = '2017-09-25 15:13:07.786607' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (64.83ms)
+Completed 200 OK in 395ms (Views: 70.7ms | ActiveRecord: 132.9ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 11:13:52 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (87.91ms)
+Completed 422 Unprocessable Entity in 3569ms (Views: 1601.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 11:13:59 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (16.47ms)
+Completed 200 OK in 64ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 11:23:18 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.23ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 11:54:00 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (24.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (95.18ms)
+Completed 200 OK in 394ms (Views: 363.1ms | ActiveRecord: 24.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 11:59:19 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (199.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (211.4ms)[0m  [1m[33mUPDATE "users" SET "token" = '1be521f0a38eb6f901209a00025c49b9', "updated_at" = '2017-09-25 15:59:20.535689' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (140.11ms)
+Completed 200 OK in 926ms (Views: 145.4ms | ActiveRecord: 410.5ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 11:59:28 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (389.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.23ms)
+Completed 422 Unprocessable Entity in 995ms (Views: 72.5ms | ActiveRecord: 389.5ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:00:26 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (294.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (133.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '255a1af87aa72c42a4fffbbc1ffe535e', "updated_at" = '2017-09-25 16:00:27.229143' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (69.81ms)
+Completed 200 OK in 782ms (Views: 163.2ms | ActiveRecord: 428.3ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:00:41 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.12ms)
+Completed 422 Unprocessable Entity in 80ms (Views: 0.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:01:39 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (111.8ms)[0m  [1m[33mUPDATE "users" SET "token" = 'cf324bb1228d13a20ccf080a7fa97b02', "updated_at" = '2017-09-25 16:01:39.835224' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (22.75ms)
+Completed 200 OK in 849ms (Views: 74.6ms | ActiveRecord: 114.2ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:01:48 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (26.9ms)
+Completed 422 Unprocessable Entity in 604ms (Views: 394.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:02:37 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (19.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (40.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '7e2b7546f86dc9baca873ff55f84b62e', "updated_at" = '2017-09-25 16:02:38.045839' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (28.33ms)
+Completed 200 OK in 188ms (Views: 29.1ms | ActiveRecord: 59.2ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:02:46 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (18.08ms)
+Completed 422 Unprocessable Entity in 139ms (Views: 19.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:06:30 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (43.0ms)[0m  [1m[33mUPDATE "users" SET "token" = 'b64450767e1c8d207d69c2f759703b4f', "updated_at" = '2017-09-25 16:06:30.565296' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.25ms)
+Completed 200 OK in 307ms (Views: 6.6ms | ActiveRecord: 45.1ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:06:43 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.2ms)
+Completed 422 Unprocessable Entity in 33ms (Views: 5.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 12:06:56 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (57.7ms)
+Completed 200 OK in 111ms (Views: 109.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:21:55 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (43.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (42.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '54120376d55a605dfa2ffc82d0e41745', "updated_at" = '2017-09-25 16:21:56.292541' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (37.47ms)
+Completed 200 OK in 482ms (Views: 56.5ms | ActiveRecord: 237.1ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:22:05 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.21ms)
+Completed 422 Unprocessable Entity in 81ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/books" for 127.0.0.1 at 2017-09-25 12:26:02 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.0ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:33:44 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (41.3ms)[0m  [1m[33mUPDATE "users" SET "token" = 'b9b966f78cd80cefc758b964640890ca', "updated_at" = '2017-09-25 16:33:44.814496' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.72ms)
+Completed 200 OK in 160ms (Views: 1.4ms | ActiveRecord: 42.3ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:33:53 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.11ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 0.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:39:39 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "users" SET "token" = '13e40d980480a8a2719d58d480e515ed', "updated_at" = '2017-09-25 16:39:39.705169' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (42.24ms)
+Completed 200 OK in 200ms (Views: 64.9ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:39:48 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.17ms)
+Completed 422 Unprocessable Entity in 58ms (Views: 3.0ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:56:38 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (81.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (10.7ms)[0m  [1m[33mUPDATE "users" SET "token" = '8d40ab0018af58414eff04ac0da66b83', "updated_at" = '2017-09-25 16:56:40.442658' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.85ms)
+Completed 200 OK in 552ms (Views: 2.5ms | ActiveRecord: 333.7ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:56:45 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:57:20 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (21.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '3f56c3d18f692c6f44256ebd518416f3', "updated_at" = '2017-09-25 16:57:20.192762' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.22ms)
+Completed 200 OK in 159ms (Views: 6.8ms | ActiveRecord: 22.5ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:57:29 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:57:50 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (30.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '7dbc251616a34d8527d374f62a123830', "updated_at" = '2017-09-25 16:57:50.862141' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.64ms)
+Completed 200 OK in 141ms (Views: 1.7ms | ActiveRecord: 31.9ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:57:58 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:58:20 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (41.8ms)[0m  [1m[33mUPDATE "users" SET "token" = '4682d13da025e718f0b41580e54f0289', "updated_at" = '2017-09-25 16:58:20.604336' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.35ms)
+Completed 200 OK in 157ms (Views: 1.2ms | ActiveRecord: 42.3ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 12:58:35 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:03:55 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (56.4ms)[0m  [1m[33mUPDATE "users" SET "token" = '287efdce5dd43502ab026a230c928a76', "updated_at" = '2017-09-25 17:03:56.847169' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (1.45ms)
+Completed 200 OK in 1617ms (Views: 3.2ms | ActiveRecord: 1262.2ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 13:04:07 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "287efdce5dd43502ab026a230c928a76"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3295ms (ActiveRecord: 1.2ms)
+
+
+  
+NameError (undefined local variable or method `book_param' for #<BooksController:0x007f8a80691448>
+Did you mean?  book_params
+               book_path
+               to_param):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:06:32 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '544754faa3997c8d4138ed6451fe8765', "updated_at" = '2017-09-25 17:06:32.278544' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.36ms)
+Completed 200 OK in 155ms (Views: 1.2ms | ActiveRecord: 8.7ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 13:06:41 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "544754faa3997c8d4138ed6451fe8765"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (39.66ms)
+Completed 404 Not Found in 284ms (Views: 176.4ms | ActiveRecord: 43.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 13:06:50 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 44ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book" for 127.0.0.1 at 2017-09-25 13:07:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/book"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 13:07:24 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 13:10:07 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.54ms)
+Completed 200 OK in 247ms (Views: 144.1ms | ActiveRecord: 14.7ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:10:29 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (20.7ms)[0m  [1m[33mUPDATE "users" SET "token" = '2ac87cd9b80573abcd962a2153444a9e', "updated_at" = '2017-09-25 17:10:29.718604' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.62ms)
+Completed 200 OK in 210ms (Views: 1.2ms | ActiveRecord: 59.9ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 13:10:38 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "2ac87cd9b80573abcd962a2153444a9e"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.28ms)
+Completed 404 Not Found in 26ms (Views: 6.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 13:10:44 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.31ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:16:29 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (4.2ms)[0m  [1m[33mUPDATE "users" SET "token" = '5c8babbf3a0886fe02ff8afc4cf7a49e', "updated_at" = '2017-09-25 17:16:30.922303' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.59ms)
+Completed 200 OK in 403ms (Views: 29.1ms | ActiveRecord: 59.4ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 13:16:39 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (22.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "5c8babbf3a0886fe02ff8afc4cf7a49e"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 404 Not Found in 125ms (Views: 51.2ms | ActiveRecord: 23.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:17:10 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (34.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '75b9467ed269cbcdac1f433fb84569c9', "updated_at" = '2017-09-25 17:17:10.185764' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.51ms)
+Completed 200 OK in 199ms (Views: 2.5ms | ActiveRecord: 35.2ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 13:17:18 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "75b9467ed269cbcdac1f433fb84569c9"], ["LIMIT", 1]]
+  [1m[36mBook Load (15.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Completed 404 Not Found in 61ms (Views: 37.9ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 13:44:33 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (7908.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2435.53ms)
+Completed 200 OK in 38761ms (Views: 12767.2ms | ActiveRecord: 22086.3ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:48:22 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (291.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (3504.1ms)[0m  [1m[33mUPDATE "users" SET "token" = '4c9f59b9b405cbdb457d849e20616db4', "updated_at" = '2017-09-25 17:48:32.815044' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (1269.02ms)
+Completed 200 OK in 12722ms (Views: 1271.0ms | ActiveRecord: 3795.4ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:49:17 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (447.7ms)[0m  [1m[33mUPDATE "users" SET "token" = '3aec3c5cf4648c61c9dcb9ff2968e734', "updated_at" = '2017-09-25 17:49:17.590397' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.33ms)
+Completed 200 OK in 585ms (Views: 1.2ms | ActiveRecord: 449.0ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 13:49:35 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "3aec3c5cf4648c61c9dcb9ff2968e734"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 457ms (ActiveRecord: 1.1ms)
+
+
+  
+NameError (undefined local variable or method `book_param' for #<BooksController:0x007f8a80a5e4e0>
+Did you mean?  book_params
+               book_path
+               to_param):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 13:52:02 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (326.9ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.86ms)
+Completed 404 Not Found in 13020ms (Views: 1076.2ms | ActiveRecord: 11599.9ms)
+
+
+  [1m[35m (275.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (119.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (406.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:00:01 -0400
+  
+ActionController::RoutingError (uninitialized constant ApplicationsController):
+  
+app/controllers/books_controller.rb:1:in `<top (required)>'
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:02:19 -0400
+  
+ActionController::RoutingError (uninitialized constant ApplicationsController):
+  
+app/controllers/books_controller.rb:1:in `<top (required)>'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:02:37 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (43.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (67.4ms)[0m  [1m[33mUPDATE "users" SET "token" = '73a42485f129b357bf76262a30626d18', "updated_at" = '2017-09-25 18:02:38.152415' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (137.07ms)
+Completed 200 OK in 916ms (Views: 138.8ms | ActiveRecord: 489.4ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 14:02:46 -0400
+  
+ActionController::RoutingError (uninitialized constant ApplicationsController):
+  
+app/controllers/books_controller.rb:1:in `<top (required)>'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:06:19 -0400
+  
+ActionController::RoutingError (uninitialized constant ApplicationsController):
+  
+app/controllers/books_controller.rb:1:in `<top (required)>'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:09:06 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '73d5afe7a79c901f656c810d4bb971a6', "updated_at" = '2017-09-25 18:09:06.927311' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.17ms)
+Completed 200 OK in 147ms (Views: 6.7ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 14:09:25 -0400
+  
+ActionController::RoutingError (uninitialized constant ApplicationsController):
+  
+app/controllers/books_controller.rb:1:in `<top (required)>'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:11:41 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (107.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.9ms)
+Completed 200 OK in 1197ms (Views: 92.3ms | ActiveRecord: 118.3ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:13:06 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (81.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '71fd6d87db9afc1cbf6f2c3d66153c76', "updated_at" = '2017-09-25 18:13:06.879679' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.65ms)
+Completed 200 OK in 377ms (Views: 3.4ms | ActiveRecord: 183.4ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 14:13:17 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:19:in `create'
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:16:54 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (80.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (8.8ms)[0m  [1m[33mUPDATE "users" SET "token" = 'a9217ab5f1f92eb9b117822f6cd5e0e3', "updated_at" = '2017-09-25 18:16:54.720148' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.91ms)
+Completed 200 OK in 341ms (Views: 3.0ms | ActiveRecord: 103.6ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 14:17:03 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "a9217ab5f1f92eb9b117822f6cd5e0e3"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 1.9ms)
+
+
+  
+NameError (undefined local variable or method `book_param' for #<BooksController:0x007f8a7e519770>
+Did you mean?  book_params
+               book_path
+               to_param):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:21:00 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:23:42 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:26:12 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:7:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:26:40 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:26:56 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:7:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:28:08 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:28:44 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:30:49 -0400
+  [1m[35m (58.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 14:34:40 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:37:50 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (66.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '8dc3af88b2c332e6d73e6ff8ec02eb37', "updated_at" = '2017-09-25 18:37:51.064440' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (57.47ms)
+Completed 200 OK in 764ms (Views: 201.8ms | ActiveRecord: 85.5ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 14:37:59 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "8dc3af88b2c332e6d73e6ff8ec02eb37"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 244ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (undefined local variable or method `book_param' for #<BooksController:0x007ff7f5dd0410>
+Did you mean?  book_params
+               book_path
+               to_param):
+  
+app/controllers/books_controller.rb:19:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:52:18 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (94.7ms)[0m  [1m[33mUPDATE "users" SET "token" = '7554b322d9fba0b6f5b834e31accbdf0', "updated_at" = '2017-09-25 18:52:19.061727' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.75ms)
+Completed 200 OK in 237ms (Views: 6.8ms | ActiveRecord: 96.1ms)
+
+
+Started DELETE "/sign-out/5" for 127.0.0.1 at 2017-09-25 14:52:30 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "7554b322d9fba0b6f5b834e31accbdf0"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (28.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '902d6be89d661c2a72862698c76754ee', "updated_at" = '2017-09-25 18:52:30.745446' WHERE "users"."id" = $1[0m  [["id", 5]]
+Completed 204 No Content in 42ms (ActiveRecord: 30.3ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:53:19 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (3.1ms)[0m  [1m[33mUPDATE "users" SET "token" = '4e51fc75be7dc7d05d18cf80ccd70060', "updated_at" = '2017-09-25 18:53:19.617241' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.34ms)
+Completed 200 OK in 130ms (Views: 1.4ms | ActiveRecord: 17.5ms)
+
+
+Started DELETE "/sign-out/5" for 127.0.0.1 at 2017-09-25 14:53:24 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "4e51fc75be7dc7d05d18cf80ccd70060"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (10.8ms)[0m  [1m[33mUPDATE "users" SET "token" = '04c6b3c8beca0c980d0f88d806b768df', "updated_at" = '2017-09-25 18:53:24.875771' WHERE "users"."id" = $1[0m  [["id", 5]]
+Completed 204 No Content in 17ms (ActiveRecord: 11.8ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:53:33 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (11.6ms)[0m  [1m[33mUPDATE "users" SET "token" = 'dfce9056f1641fef8ed576a822c46fcc', "updated_at" = '2017-09-25 18:53:33.930955' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.42ms)
+Completed 200 OK in 120ms (Views: 1.0ms | ActiveRecord: 12.1ms)
+
+
+  [1m[36mUser Load (24.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (24.3ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:08:38 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 15:09:45 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "dfce9056f1641fef8ed576a822c46fcc"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 412ms (ActiveRecord: 4.3ms)
+
+
+  
+NameError (undefined local variable or method `book_param' for #<BooksController:0x007ff7f2d69420>
+Did you mean?  book_params
+               book_path
+               to_param):
+  
+app/controllers/books_controller.rb:19:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:12:14 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2017-09-25 15:12:25 -0400
+Processing by UsersController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:12:35 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book" for 127.0.0.1 at 2017-09-25 15:12:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/book"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:12:45 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:18:28 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:20:05 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `book' for nil:NilClass):
+  
+app/controllers/books_controller.rb:7:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:20:20 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:22:43 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 15:23:15 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[33mUPDATE "users" SET "token" = '7443f6bb2d94edab6185cd0eddc82d19', "updated_at" = '2017-09-25 19:23:15.291232' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (1.34ms)
+Completed 200 OK in 215ms (Views: 3.3ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 15:23:27 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "7443f6bb2d94edab6185cd0eddc82d19"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (167.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Zoo"], ["author", "James Paterson"], ["created_at", "2017-09-25 19:23:27.640687"], ["updated_at", "2017-09-25 19:23:27.640687"], ["user_id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Json (1.34ms)
+Completed 201 Created in 408ms (Views: 14.1ms | ActiveRecord: 175.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 15:23:33 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 15:26:53 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (33.3ms)[0m  [1m[33mUPDATE "users" SET "token" = 'e2e5c53bb7adb9116fbcf5df95afb653', "updated_at" = '2017-09-25 19:26:53.548805' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.75ms)
+Completed 200 OK in 135ms (Views: 2.1ms | ActiveRecord: 33.9ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 15:27:12 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Zoo", "author"=>"James Paterson"}, "submit"=>"Create book"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "e2e5c53bb7adb9116fbcf5df95afb653"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (44.0ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Zoo"], ["author", "James Paterson"], ["created_at", "2017-09-25 19:27:12.707213"], ["updated_at", "2017-09-25 19:27:12.707213"], ["user_id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Json (1.0ms)
+Completed 201 Created in 59ms (Views: 3.2ms | ActiveRecord: 46.1ms)
+
+
+>>>>>>> development
