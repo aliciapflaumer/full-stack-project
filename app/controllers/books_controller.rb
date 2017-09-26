@@ -1,6 +1,6 @@
 # frozen_string_literal:true
 
-class BooksController < ProtectedController
+class BooksController < OpenReadController
   before_action :set_book, only: %i[show update destroy]
   # before_action :set_book, only: %i[update destroy]
 
@@ -30,6 +30,7 @@ class BooksController < ProtectedController
 
   # PATCH/PUT /books/1
   def update
+    binding.pry
     if @book.update(book_params)
       render json: @book
     else
@@ -52,6 +53,6 @@ class BooksController < ProtectedController
 
   # Only allow a trusted parameter "white list" through.
   def book_params
-    params.require(:book).permit(:title, :author)
+    params.require(:book).permit(:title, :author, :status)
   end
 end

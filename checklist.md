@@ -10,7 +10,7 @@
 
 4. [ DONE ] Test that bin/rails server is working
 
-5. [] Get gh-pages set up, push to it, and test to see that pages are live on Github Pages.
+5. []  Get gh-pages set up, push to it, and test to see that pages are live on Github Pages.
 
 6. [ DONE ] Get Heroku set up, push to it, and test to see that it is live.
   • [ DONE ] Set up rails app with template
@@ -108,20 +108,21 @@
 
 # DELETE
 
-1. [] Create a delete button on table on backend
-2. [] events.js for delete book
-3. [] api.js for delete book
-4. [] ui.js for delete
+1. [ DONE ] Create a delete button on table on backend
+2. [ DONE ] events.js for delete book
+3. [ DONE ] api.js for delete book
+4. [ DONE ] ui.js for delete
 5. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returning 204
 6. [ DONE ] Confirm that the book no longer exists in the backend DB
 
+# September 26, 2017
 
 # UPDATE
 
 1. [ DONE ] HTML for update a book
-2. [] events.js for update a book
-3. [] api.js for update a book
-4. [] ui.js for update a book
+2. [ DONE ] events.js for update a book
+3. [ DONE ] api.js for update a book
+4. [ DONE ] ui.js for update a book
 5. [] Test that you can update a book via the Web UI
 6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returns Completed 201 Created
 7. Confirm that the book has changed in the backend DB
