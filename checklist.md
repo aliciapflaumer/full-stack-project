@@ -93,20 +93,27 @@
 5. [ DONE ] Test that you can create a book via the Web UI
 6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code 201
 
+# September 25, 2017
+
 # READ (GET)
 
 1. [ DONE ] HTML for get all books button
-2. [] events.js for get book
-3. [] api.js for get book
-4. [] ui.js for get book
-5. [] Test that you can display a books table via the Web UI
+2. [ DONE ] events.js for get book
+3. [ DONE ] api.js for get book
+4. [ DONE ] ui.js for get book
+5. [ DONE] Test that you can display a books table via the Web UI
 6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returns 200
+
+# September 26, 2017
 
 # DELETE
 
 1. [] Create a delete button on table on backend
-2. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returning 204
-3. [ DONE ] Confirm that the book no longer exists in the backend DB
+2. [] events.js for delete book
+3. [] api.js for delete book
+4. [] ui.js for delete
+5. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returning 204
+6. [ DONE ] Confirm that the book no longer exists in the backend DB
 
 
 # UPDATE
