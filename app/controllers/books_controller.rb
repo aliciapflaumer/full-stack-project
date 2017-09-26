@@ -1,10 +1,13 @@
+# frozen_string_literal:true
+
 class BooksController < ProtectedController
   before_action :set_book, only: %i[show update destroy]
+  # before_action :set_book, only: %i[update destroy]
 
   # GET /books
   def index
     # @books = Book.all
-    @books = current_user.book.all
+    @books = current_user.books
     render json: @books
   end
 
@@ -43,7 +46,8 @@ class BooksController < ProtectedController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_book
-    @book = Book.find(params[:id])
+    # @book = Book.find(params[:id])
+    @book = current_user.books.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.

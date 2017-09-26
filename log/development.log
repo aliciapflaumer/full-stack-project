@@ -2622,3 +2622,549 @@ Processing by BooksController#create as */*
 Completed 201 Created in 59ms (Views: 3.2ms | ActiveRecord: 46.1ms)
 
 
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started GET "/books" for 127.0.0.1 at 2017-09-25 18:32:58 -0400
+  [1m[35m (39.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-25 18:33:12 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/aliciapflaumer/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/aliciapflaumer/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb (5.2ms)
+Completed 200 OK in 88ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 18:33:22 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 18:33:46 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (25.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (125.3ms)[0m  [1m[33mUPDATE "users" SET "token" = 'f9b0894d92be0f6d819e2f9254207cfb', "updated_at" = '2017-09-25 22:33:46.861134' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (86.29ms)
+Completed 200 OK in 949ms (Views: 106.8ms | ActiveRecord: 320.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 18:42:01 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (2.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.4ms)
+Completed 200 OK in 340ms (Views: 52.3ms | ActiveRecord: 13.5ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 18:47:59 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+  [1m[35m (12.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.93ms)
+Completed 422 Unprocessable Entity in 665ms (Views: 342.9ms | ActiveRecord: 12.6ms)
+
+
+Started DELETE "/sign-out/5" for 127.0.0.1 at 2017-09-25 18:49:09 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "f9b0894d92be0f6d819e2f9254207cfb"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (70.4ms)[0m  [1m[33mUPDATE "users" SET "token" = '92cb6b83cea5a98cfdc44e5d48d4bf5a', "updated_at" = '2017-09-25 22:49:09.711491' WHERE "users"."id" = $1[0m  [["id", 5]]
+Completed 204 No Content in 205ms (ActiveRecord: 83.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 18:49:17 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (3.4ms)[0m  [1m[33mUPDATE "users" SET "token" = 'fd1bc99a2a6123baaf09198d4d1382e7', "updated_at" = '2017-09-25 22:49:17.718612' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.88ms)
+Completed 200 OK in 216ms (Views: 1.8ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 18:49:24 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.12ms)
+Completed 422 Unprocessable Entity in 9ms (Views: 1.4ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 18:49:33 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "token" = '5414d605b5612613d1677b4a7a9fde8a', "updated_at" = '2017-09-25 22:49:33.255884' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.3ms)
+Completed 200 OK in 117ms (Views: 1.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 18:49:42 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.13ms)
+Completed 422 Unprocessable Entity in 7ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 18:50:26 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.93ms)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 18:53:39 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '0337e85e00f4c8ce6ecfdcb22fbe547d', "updated_at" = '2017-09-25 22:53:39.803402' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.86ms)
+Completed 200 OK in 181ms (Views: 2.6ms | ActiveRecord: 11.3ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 18:53:49 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 18:54:05 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.02ms)
+Completed 200 OK in 85ms (Views: 49.3ms | ActiveRecord: 15.8ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 18:55:42 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "token" = '67533032bcb0e32b3e617a41cb9b6a0e', "updated_at" = '2017-09-25 22:55:42.900548' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.68ms)
+Completed 200 OK in 139ms (Views: 6.7ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 18:55:50 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 18:56:15 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (33.1ms)[0m  [1m[33mUPDATE "users" SET "token" = '51250dcb0bf0014d2385932b0fd8adb6', "updated_at" = '2017-09-25 22:56:15.848682' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.38ms)
+Completed 200 OK in 150ms (Views: 1.0ms | ActiveRecord: 34.2ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 18:56:26 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:00:09 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (16.1ms)
+Completed 200 OK in 76ms (Views: 65.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:00:39 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (7.0ms)[0m  [1m[33mUPDATE "users" SET "token" = '935f0ca700554145b1c4739a0f01aacd', "updated_at" = '2017-09-25 23:00:39.802331' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.85ms)
+Completed 200 OK in 141ms (Views: 2.9ms | ActiveRecord: 13.5ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:01:01 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"My Book", "author"=>"Me"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:01:11 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:01:39 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (42.0ms)[0m  [1m[33mUPDATE "users" SET "token" = 'e07abfaff0e8d5085e941088002e22c7', "updated_at" = '2017-09-25 23:01:39.802180' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.38ms)
+Completed 200 OK in 153ms (Views: 1.0ms | ActiveRecord: 42.7ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:02:11 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"My Book", "author"=>"Me"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:02:36 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.73ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:03:19 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.35ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:03:24 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"My Book", "author"=>"Me"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started DELETE "/sign-out/5" for 127.0.0.1 at 2017-09-25 19:03:27 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "e07abfaff0e8d5085e941088002e22c7"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (41.5ms)[0m  [1m[33mUPDATE "users" SET "token" = '2e1a37a2f9bef69e6ae50df8520fe227', "updated_at" = '2017-09-25 23:03:27.176127' WHERE "users"."id" = $1[0m  [["id", 5]]
+Completed 204 No Content in 50ms (ActiveRecord: 42.2ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:03:33 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (44.1ms)[0m  [1m[33mUPDATE "users" SET "token" = 'ba98bbb1bd912c4d8ea09b778b3e4433', "updated_at" = '2017-09-25 23:03:33.545138' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.37ms)
+Completed 200 OK in 202ms (Views: 1.5ms | ActiveRecord: 44.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:06:23 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.46ms)
+Completed 200 OK in 30ms (Views: 22.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:06:37 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"My Book", "author"=>"Me"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:06:51 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:16:44 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.63ms)
+Completed 200 OK in 77ms (Views: 40.6ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:17:56 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.14ms)
+Completed 200 OK in 210ms (Views: 113.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:18:10 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "users" SET "token" = '417c79c6ea6f3ef77f464e5b9917b8b6', "updated_at" = '2017-09-25 23:18:10.418424' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.57ms)
+Completed 200 OK in 157ms (Views: 1.2ms | ActiveRecord: 11.6ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:18:19 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:22:09 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (7.1ms)
+Completed 200 OK in 39ms (Views: 29.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:23:46 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:21:in `create'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:30:11 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.23ms)
+Completed 200 OK in 66ms (Views: 38.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:38:45 -0400
+  
+SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+  def index
+     ^):
+  
+app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:39:13 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (22.5ms)[0m  [1m[33mUPDATE "users" SET "token" = 'd84718d54388dbe07bbb60eae36f2227', "updated_at" = '2017-09-25 23:39:13.891323' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.87ms)
+Completed 200 OK in 220ms (Views: 2.2ms | ActiveRecord: 57.4ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:39:23 -0400
+  
+SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+  def index
+     ^):
+  
+app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:39:33 -0400
+  
+SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+  def index
+     ^):
+  
+app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:40:17 -0400
+  
+SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+  def index
+     ^):
+  
+app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:40:35 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:40:54 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:10:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:42:21 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:10:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:45:02 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:10:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:45:14 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:10:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:45:37 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:10:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:46:02 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:50:19 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:10:in `index'
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:51:13 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (43.4ms)[0m  [1m[33mUPDATE "users" SET "token" = 'ee3dd2dd0d54e305a3d5c1f893eeff3d', "updated_at" = '2017-09-25 23:51:13.400977' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.67ms)
+Completed 200 OK in 201ms (Views: 2.1ms | ActiveRecord: 53.2ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:51:23 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"My Book", "author"=>"Me"}, "submit"=>"Create book"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "ee3dd2dd0d54e305a3d5c1f893eeff3d"], ["LIMIT", 1]]
+  [1m[35m (41.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (82.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "My Book"], ["author", "Me"], ["created_at", "2017-09-25 23:51:23.561116"], ["updated_at", "2017-09-25 23:51:23.561116"], ["user_id", 5]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Json (1.68ms)
+Completed 201 Created in 462ms (Views: 23.7ms | ActiveRecord: 134.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:51:31 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:10:in `index'
+Started GET "/books" for 127.0.0.1 at 2017-09-25 19:51:58 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:52:08 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '78f45ca793a688d21e31f9f31a9893c6', "updated_at" = '2017-09-25 23:52:08.676335' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.64ms)
+Completed 200 OK in 227ms (Views: 1.6ms | ActiveRecord: 13.9ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:52:19 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"Fringe: The Zodiac Paradox", "author"=>"Christa Faust"}, "submit"=>"Create book"}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "78f45ca793a688d21e31f9f31a9893c6"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Fringe: The Zodiac Paradox"], ["author", "Christa Faust"], ["created_at", "2017-09-25 23:52:20.033470"], ["updated_at", "2017-09-25 23:52:20.033470"], ["user_id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Json (1.02ms)
+Completed 201 Created in 115ms (Views: 29.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 20:03:21 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 20:03:37 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2017-09-25 20:03:47 -0400
+Processing by BooksController#index as HTML
+Filter chain halted as :authenticate rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 20:04:05 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (50.4ms)[0m  [1m[33mUPDATE "users" SET "token" = '574bfac476540b24442af6abc9be1235', "updated_at" = '2017-09-26 00:04:05.863790' WHERE "users"."id" = $1[0m  [["id", 5]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.31ms)
+Completed 200 OK in 216ms (Views: 5.3ms | ActiveRecord: 52.7ms)
+
+
+Started POST "/books/" for 127.0.0.1 at 2017-09-25 20:04:24 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"My Best Book Ever", "author"=>"Me"}, "submit"=>"Create book"}
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "574bfac476540b24442af6abc9be1235"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (37.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "My Best Book Ever"], ["author", "Me"], ["created_at", "2017-09-26 00:04:24.635033"], ["updated_at", "2017-09-26 00:04:24.635033"], ["user_id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered BookSerializer with ActiveModelSerializers::Adapter::Json (0.6ms)
+Completed 201 Created in 82ms (Views: 8.2ms | ActiveRecord: 48.6ms)
+
+
