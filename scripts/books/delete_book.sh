@@ -1,1 +1,1 @@
-curl --include --request DELETE "http://localhost:4741/books/${ID}"
+curl --include --request DELETE "https://gotreads.herokuapp.com/books/${ID}"
