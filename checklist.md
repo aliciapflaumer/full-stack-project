@@ -115,7 +115,7 @@
 5. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returning 204
 6. [ DONE ] Confirm that the book no longer exists in the backend DB
 
-# September 26, 2017
+# September 27, 2017
 
 # UPDATE
 
@@ -123,6 +123,6 @@
 2. [ DONE ] events.js for update a book
 3. [ DONE ] api.js for update a book
 4. [ DONE ] ui.js for update a book
-5. [] Test that you can update a book via the Web UI
+5. [ DONE ] Test that you can update a book via the Web UI
 6. [ DONE ] Confirm that request ran on backend with appropriate HTTP status code returns Completed 201 Created
-7. Confirm that the book has changed in the backend DB
+7. [ DONE ] Confirm that the book has changed in the backend DB
