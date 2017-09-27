@@ -1,4 +1,4 @@
-<% project_name = 'books-tracker-api' %>
+<% project_name = 'book-tracker-app' %>
 
 default: &default
   adapter: postgresql
