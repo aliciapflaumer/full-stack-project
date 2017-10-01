@@ -15964,3 +15964,317 @@ Processing by BooksController#destroy as */*
 Completed 204 No Content in 25ms (ActiveRecord: 10.2ms)
 
 
+Started POST "/sign-in" for ::1 at 2017-10-01 15:33:06 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (76.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (141.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '0b9382887a59b651e1d508c9b93b36fd', "updated_at" = '2017-10-01 19:33:06.921021' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (85.88ms)
+Completed 200 OK in 776ms (Views: 123.0ms | ActiveRecord: 218.3ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:33:24 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (42.8ms)[0m  [1m[33mUPDATE "users" SET "token" = 'c59a3d63a4f3d8b502a60236a8a3bff8', "updated_at" = '2017-10-01 19:33:24.915301' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.59ms)
+Completed 200 OK in 155ms (Views: 2.4ms | ActiveRecord: 48.9ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:33:26 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "c59a3d63a4f3d8b502a60236a8a3bff8"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (2.36ms)
+Completed 200 OK in 37ms (Views: 10.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:33:32 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "c59a3d63a4f3d8b502a60236a8a3bff8"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.44ms)
+Completed 200 OK in 12ms (Views: 3.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/sign-out/1" for ::1 at 2017-10-01 15:33:35 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "c59a3d63a4f3d8b502a60236a8a3bff8"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "token" = 'f5a0fa61b162d350bcec870643877c93', "updated_at" = '2017-10-01 19:33:35.117856' WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 204 No Content in 19ms (ActiveRecord: 4.7ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:33:40 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "token" = 'e9095c8f301ae4f6fa8470438df476b2', "updated_at" = '2017-10-01 19:33:40.256054' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.9ms)
+Completed 200 OK in 146ms (Views: 5.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:33:41 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "e9095c8f301ae4f6fa8470438df476b2"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.82ms)
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for ::1 at 2017-10-01 15:33:43 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.82ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:34:45 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "e9095c8f301ae4f6fa8470438df476b2"], ["LIMIT", 1]]
+  [1m[36mBook Load (10.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (5.7ms)
+Completed 200 OK in 69ms (Views: 17.9ms | ActiveRecord: 13.2ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:36:00 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (42.5ms)[0m  [1m[33mUPDATE "users" SET "token" = 'f9cd9d42102490e658fa13b2eaa3bd09', "updated_at" = '2017-10-01 19:36:01.080888' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.93ms)
+Completed 200 OK in 148ms (Views: 2.5ms | ActiveRecord: 42.9ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:36:01 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "f9cd9d42102490e658fa13b2eaa3bd09"], ["LIMIT", 1]]
+  [1m[36mBook Load (1.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.67ms)
+Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:36:25 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "users" SET "token" = '0cc0d66cc225945d925d2bba4ea8f9ba', "updated_at" = '2017-10-01 19:36:25.260761' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.5ms)
+Completed 200 OK in 127ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:36:30 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "0cc0d66cc225945d925d2bba4ea8f9ba"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (4.03ms)
+Completed 200 OK in 10ms (Views: 5.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:36:41 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "0cc0d66cc225945d925d2bba4ea8f9ba"], ["LIMIT", 1]]
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.6ms)
+Completed 200 OK in 16ms (Views: 6.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:36:41 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "0cc0d66cc225945d925d2bba4ea8f9ba"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.21ms)
+Completed 200 OK in 13ms (Views: 3.3ms | ActiveRecord: 3.1ms)
+
+
+Started DELETE "/sign-out/1" for ::1 at 2017-10-01 15:36:46 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "0cc0d66cc225945d925d2bba4ea8f9ba"], ["LIMIT", 1]]
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '8aba0d4968f89b2817d824f0f609c706', "updated_at" = '2017-10-01 19:36:46.650761' WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 204 No Content in 37ms (ActiveRecord: 8.4ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:36:51 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (13.8ms)[0m  [1m[33mUPDATE "users" SET "token" = '96b4ac336ec2f2dd92fa5e0540786be6', "updated_at" = '2017-10-01 19:36:51.138712' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (1.15ms)
+Completed 200 OK in 123ms (Views: 2.1ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:36:52 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "96b4ac336ec2f2dd92fa5e0540786be6"], ["LIMIT", 1]]
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.87ms)
+Completed 200 OK in 18ms (Views: 3.7ms | ActiveRecord: 7.9ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:38:19 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (19.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '6aba5b2fe040ec41dfff5ec8b0ad91f8', "updated_at" = '2017-10-01 19:38:19.608686' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.38ms)
+Completed 200 OK in 118ms (Views: 1.5ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:38:20 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "6aba5b2fe040ec41dfff5ec8b0ad91f8"], ["LIMIT", 1]]
+  [1m[36mBook Load (7.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.14ms)
+Completed 200 OK in 29ms (Views: 12.9ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:38:22 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "6aba5b2fe040ec41dfff5ec8b0ad91f8"], ["LIMIT", 1]]
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.6ms)
+Completed 200 OK in 12ms (Views: 3.2ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/sign-out/1" for ::1 at 2017-10-01 15:38:25 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "6aba5b2fe040ec41dfff5ec8b0ad91f8"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (26.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '8b22ccccc2a1ca1748865794049f397f', "updated_at" = '2017-10-01 19:38:25.441675' WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 204 No Content in 34ms (ActiveRecord: 27.3ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:38:29 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (33.4ms)[0m  [1m[33mUPDATE "users" SET "token" = 'b309f064f09fbcd302afca1d68e7c2e3', "updated_at" = '2017-10-01 19:38:29.521549' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.74ms)
+Completed 200 OK in 145ms (Views: 1.4ms | ActiveRecord: 37.8ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:38:30 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "b309f064f09fbcd302afca1d68e7c2e3"], ["LIMIT", 1]]
+  [1m[36mBook Load (2.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.86ms)
+Completed 200 OK in 11ms (Views: 3.3ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:40:45 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (212.1ms)[0m  [1m[33mUPDATE "users" SET "token" = '8940f17900cbc9ff4889541aeb7b18ee', "updated_at" = '2017-10-01 19:40:45.344697' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (3.17ms)
+Completed 200 OK in 356ms (Views: 6.8ms | ActiveRecord: 213.4ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:40:46 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "8940f17900cbc9ff4889541aeb7b18ee"], ["LIMIT", 1]]
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (3.24ms)
+Completed 200 OK in 31ms (Views: 13.7ms | ActiveRecord: 10.0ms)
+
+
+Started DELETE "/sign-out/1" for ::1 at 2017-10-01 15:40:48 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "8940f17900cbc9ff4889541aeb7b18ee"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (48.1ms)[0m  [1m[33mUPDATE "users" SET "token" = '766106c5d1cc5d1b5efb6cfb1d266da8', "updated_at" = '2017-10-01 19:40:48.554241' WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 204 No Content in 81ms (ActiveRecord: 49.8ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:40:55 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (78.3ms)[0m  [1m[33mUPDATE "users" SET "token" = '9a85379ac7038b37a008daa1a77ce11c', "updated_at" = '2017-10-01 19:40:55.948158' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.34ms)
+Completed 200 OK in 187ms (Views: 1.0ms | ActiveRecord: 78.8ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:40:59 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (25.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "9a85379ac7038b37a008daa1a77ce11c"], ["LIMIT", 1]]
+  [1m[36mBook Load (1.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.01ms)
+Completed 200 OK in 36ms (Views: 4.3ms | ActiveRecord: 26.8ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:42:33 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (26.0ms)[0m  [1m[33mUPDATE "users" SET "token" = 'f3d47b15cd5bd80ba91b00bdb3280a76', "updated_at" = '2017-10-01 19:42:33.834039' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.69ms)
+Completed 200 OK in 128ms (Views: 1.3ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:42:35 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "f3d47b15cd5bd80ba91b00bdb3280a76"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.77ms)
+Completed 200 OK in 14ms (Views: 2.5ms | ActiveRecord: 6.8ms)
+
+
+Started DELETE "/sign-out/1" for ::1 at 2017-10-01 15:42:36 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "f3d47b15cd5bd80ba91b00bdb3280a76"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "users" SET "token" = 'fc352bfd6bbfa8164df45a417ee04f9a', "updated_at" = '2017-10-01 19:42:36.586313' WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 204 No Content in 30ms (ActiveRecord: 3.5ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:42:40 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (6.0ms)[0m  [1m[33mUPDATE "users" SET "token" = '56e4ec17541b7b62246ea85ac4d29ad1', "updated_at" = '2017-10-01 19:42:40.401777' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.32ms)
+Completed 200 OK in 124ms (Views: 2.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:42:41 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "56e4ec17541b7b62246ea85ac4d29ad1"], ["LIMIT", 1]]
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (1.44ms)
+Completed 200 OK in 10ms (Views: 3.6ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/sign-out/1" for ::1 at 2017-10-01 15:42:49 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "56e4ec17541b7b62246ea85ac4d29ad1"], ["LIMIT", 1]]
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "token" = '49ded980f93935d74c2ec656c78235df', "updated_at" = '2017-10-01 19:42:49.081884' WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 204 No Content in 41ms (ActiveRecord: 13.9ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 15:42:53 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE "users" SET "token" = '39ec55a711fa5ac6dc1873f0a728269d', "updated_at" = '2017-10-01 19:42:53.122446' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (0.31ms)
+Completed 200 OK in 101ms (Views: 1.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 15:42:54 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "39ec55a711fa5ac6dc1873f0a728269d"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.9ms)
+Completed 200 OK in 34ms (Views: 2.7ms | ActiveRecord: 1.2ms)
+
+
