@@ -14,7 +14,7 @@ GotReads, is a book tracking app that users can keep track of books they want to
 
 ## The GotReads Front End (Client)
 
-The front end is written in html, css, javascript,handlebars and bootstrap.
+The front end is written in html, css, javascript, handlebars.
 
 ## The GotReads Back End (Server)
 
@@ -37,9 +37,13 @@ A user has many Books.
 
 ## Approach to building GotReads
 
-I approached building GotReads differently than the Tic-Tac-Toe game. I felt more comfortable with the code and had a clearer focus. I first started with a big plan with my sketches which quickly dwindled down to just the bare minimum, I developed a checkist, and a chart depicting the steps to take through the process.
+I approached building GotReads differently than the Tic-Tac-Toe game. I felt more comfortable with the code and had a clearer focus. I first started with a big plan with my sketches which quickly dwindled down to just the bare minimum, I developed a checklist, and a chart depicting the steps to take through the process.
+
+[Workflow Checklist](https://github.com/aliciapflaumer/gotReads-backend/blob/master/checklist.md)
 
 ## Issues I encountered
+
+- In testing my app, I discovered a bug that led to a larger problem on the backend. [Read issue for that here](https://git.generalassemb.ly/ga-wdi-boston/full-stack-project/issues/928)
 
 - I had an issue with deployment. I had missed a couple of steps in the heroku setup
 guide. Solved.
@@ -73,4 +77,4 @@ html file. Solved.
 
 ![ERD](https://i.imgur.com/Dg2aETG.jpg)
 
-![Tables](https://i.imgur.com/2Zja4j1.jpg?1)
+![Tables](https://i.imgur.com/2Zja4j1.jpg)

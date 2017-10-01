@@ -10,7 +10,7 @@
 
 4. [ DONE ] Test that bin/rails server is working
 
-5. []  Get gh-pages set up, push to it, and test to see that pages are live on Github Pages.
+5. [ DONE ]  Get gh-pages set up, push to it, and test to see that pages are live on Github Pages.
 
 6. [ DONE ] Get Heroku set up, push to it, and test to see that it is live.
   • [ DONE ] Set up rails app with template

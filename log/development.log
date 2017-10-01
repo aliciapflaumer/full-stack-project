@@ -5,10 +5,10 @@ DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is depr
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for 127.0.0.1 at 2017-09-22 21:32:10 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -53,10 +53,10 @@ puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for 127.0.0.1 at 2017-09-22 21:35:06 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -103,10 +103,10 @@ DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is depr
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started POST "/sign-up" for 127.0.0.1 at 2017-09-23 11:17:51 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -150,10 +150,10 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for 127.0.0.1 at 2017-09-23 11:19:16 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -197,10 +197,10 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for 127.0.0.1 at 2017-09-23 11:19:29 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -244,10 +244,10 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for 127.0.0.1 at 2017-09-23 11:19:45 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -291,10 +291,10 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for 127.0.0.1 at 2017-09-23 11:24:06 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -338,10 +338,10 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for 127.0.0.1 at 2017-09-23 11:29:52 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "books-tracker-api_development" does not exist
 ):
-  
+
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -457,9 +457,9 @@ Completed 204 No Content in 209ms (ActiveRecord: 3.8ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-23 12:27:15 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -483,9 +483,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-23 12:27:29 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -527,9 +527,9 @@ Completed 200 OK in 100ms (Views: 1.1ms | ActiveRecord: 2.1ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-23 12:29:00 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -553,9 +553,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-23 12:29:24 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -579,9 +579,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-23 12:29:46 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -605,9 +605,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-23 12:30:28 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -782,9 +782,9 @@ Completed 200 OK in 47ms (Views: 36.8ms | ActiveRecord: 1.6ms)
 
 
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-23 15:34:50 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -808,9 +808,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/books/" for 127.0.0.1 at 2017-09-23 15:35:14 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -902,9 +902,9 @@ Completed 200 OK in 258ms (Views: 188.5ms | ActiveRecord: 55.5ms)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started DELETE "/books/" for 127.0.0.1 at 2017-09-23 19:45:55 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -989,9 +989,9 @@ Completed 404 Not Found in 188ms (Views: 183.5ms | ActiveRecord: 0.5ms)
 
 
 Started POST "/books/3" for 127.0.0.1 at 2017-09-23 19:54:12 -0400
-  
+
 ActionController::RoutingError (No route matches [POST] "/books/3"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1015,9 +1015,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/books/3" for 127.0.0.1 at 2017-09-23 19:55:35 -0400
-  
+
 ActionController::RoutingError (No route matches [POST] "/books/3"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1126,9 +1126,9 @@ Completed 401 Unauthorized in 7ms (Views: 2.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/user" for 127.0.0.1 at 2017-09-23 20:09:03 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1213,9 +1213,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/user" for 127.0.0.1 at 2017-09-24 17:37:36 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1291,9 +1291,9 @@ Completed 401 Unauthorized in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/user" for 127.0.0.1 at 2017-09-24 18:56:04 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1318,9 +1318,9 @@ puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   [1m[36mUser Load (40.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
 Started GET "/user" for 127.0.0.1 at 2017-09-24 19:01:43 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1350,9 +1350,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/user" for 127.0.0.1 at 2017-09-24 19:01:55 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1376,9 +1376,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/user" for 127.0.0.1 at 2017-09-24 19:02:50 -0400
-  
+
 ActionController::RoutingError (uninitialized constant UserController):
-  
+
 activesupport (5.1.3) lib/active_support/inflector/methods.rb:269:in `const_get'
 activesupport (5.1.3) lib/active_support/inflector/methods.rb:269:in `block in constantize'
 activesupport (5.1.3) lib/active_support/inflector/methods.rb:267:in `each'
@@ -1424,9 +1424,9 @@ puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/user" for 127.0.0.1 at 2017-09-24 19:07:55 -0400
-  
+
 ActionController::RoutingError (uninitialized constant UserController):
-  
+
 activesupport (5.1.3) lib/active_support/inflector/methods.rb:269:in `const_get'
 activesupport (5.1.3) lib/active_support/inflector/methods.rb:269:in `block in constantize'
 activesupport (5.1.3) lib/active_support/inflector/methods.rb:267:in `each'
@@ -1489,7 +1489,7 @@ Completed 200 OK in 109ms (Views: 63.3ms | ActiveRecord: 8.7ms)
 
 Started GET "/books" for 127.0.0.1 at 2017-09-24 19:45:06 -0400
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -1497,7 +1497,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -1563,9 +1563,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/user" for 127.0.0.1 at 2017-09-24 19:47:44 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/user"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -1984,9 +1984,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:57:20 -0400
 Processing by UsersController#signin as */*
@@ -2003,9 +2003,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:57:50 -0400
 Processing by UsersController#signin as */*
@@ -2022,9 +2022,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 12:58:20 -0400
 Processing by UsersController#signin as */*
@@ -2041,9 +2041,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:03:55 -0400
 Processing by UsersController#signin as */*
@@ -2061,12 +2061,12 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 3295ms (ActiveRecord: 1.2ms)
 
 
-  
+
 NameError (undefined local variable or method `book_param' for #<BooksController:0x007f8a80691448>
 Did you mean?  book_params
                book_path
                to_param):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 13:06:32 -0400
 Processing by UsersController#signin as */*
@@ -2093,9 +2093,9 @@ Completed 401 Unauthorized in 44ms (Views: 26.4ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/book" for 127.0.0.1 at 2017-09-25 13:07:16 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/book"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -2224,12 +2224,12 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 457ms (ActiveRecord: 1.1ms)
 
 
-  
+
 NameError (undefined local variable or method `book_param' for #<BooksController:0x007f8a80a5e4e0>
 Did you mean?  book_params
                book_path
                to_param):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 13:52:02 -0400
 Processing by BooksController#index as HTML
@@ -2247,16 +2247,16 @@ Completed 404 Not Found in 13020ms (Views: 1076.2ms | ActiveRecord: 11599.9ms)
   [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
 Started GET "/books" for 127.0.0.1 at 2017-09-25 14:00:01 -0400
-  
+
 ActionController::RoutingError (uninitialized constant ApplicationsController):
-  
+
 app/controllers/books_controller.rb:1:in `<top (required)>'
   [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
 Started GET "/books" for 127.0.0.1 at 2017-09-25 14:02:19 -0400
-  
+
 ActionController::RoutingError (uninitialized constant ApplicationsController):
-  
+
 app/controllers/books_controller.rb:1:in `<top (required)>'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:02:37 -0400
 Processing by UsersController#signin as */*
@@ -2268,14 +2268,14 @@ Completed 200 OK in 916ms (Views: 138.8ms | ActiveRecord: 489.4ms)
 
 
 Started POST "/books/" for 127.0.0.1 at 2017-09-25 14:02:46 -0400
-  
+
 ActionController::RoutingError (uninitialized constant ApplicationsController):
-  
+
 app/controllers/books_controller.rb:1:in `<top (required)>'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 14:06:19 -0400
-  
+
 ActionController::RoutingError (uninitialized constant ApplicationsController):
-  
+
 app/controllers/books_controller.rb:1:in `<top (required)>'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:09:06 -0400
 Processing by UsersController#signin as */*
@@ -2287,9 +2287,9 @@ Completed 200 OK in 147ms (Views: 6.7ms | ActiveRecord: 4.5ms)
 
 
 Started POST "/books/" for 127.0.0.1 at 2017-09-25 14:09:25 -0400
-  
+
 ActionController::RoutingError (uninitialized constant ApplicationsController):
-  
+
 app/controllers/books_controller.rb:1:in `<top (required)>'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 14:11:41 -0400
 Processing by BooksController#index as HTML
@@ -2313,9 +2313,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:19:in `create'
   [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
@@ -2335,12 +2335,12 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 265ms (ActiveRecord: 1.9ms)
 
 
-  
+
 NameError (undefined local variable or method `book_param' for #<BooksController:0x007f8a7e519770>
 Did you mean?  book_params
                book_path
                to_param):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 14:21:00 -0400
 Processing by BooksController#index as HTML
@@ -2361,9 +2361,9 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `book' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:7:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 14:26:40 -0400
 Processing by BooksController#index as HTML
@@ -2376,9 +2376,9 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `book' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:7:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 14:28:08 -0400
 Processing by BooksController#index as HTML
@@ -2425,12 +2425,12 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 244ms (ActiveRecord: 0.4ms)
 
 
-  
+
 NameError (undefined local variable or method `book_param' for #<BooksController:0x007ff7f5dd0410>
 Did you mean?  book_params
                book_path
                to_param):
-  
+
 app/controllers/books_controller.rb:19:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 14:52:18 -0400
 Processing by UsersController#signin as */*
@@ -2495,12 +2495,12 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 412ms (ActiveRecord: 4.3ms)
 
 
-  
+
 NameError (undefined local variable or method `book_param' for #<BooksController:0x007ff7f2d69420>
 Did you mean?  book_params
                book_path
                to_param):
-  
+
 app/controllers/books_controller.rb:19:in `create'
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (18.9ms)[0m  [1m[31mROLLBACK[0m
@@ -2525,9 +2525,9 @@ Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/book" for 127.0.0.1 at 2017-09-25 15:12:40 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/book"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -2567,9 +2567,9 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `book' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:7:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 15:20:20 -0400
 Processing by BooksController#index as HTML
@@ -2752,9 +2752,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 18:54:05 -0400
 Processing by BooksController#index as HTML
@@ -2778,9 +2778,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 18:56:15 -0400
 Processing by UsersController#signin as */*
@@ -2797,9 +2797,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
   [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
@@ -2825,9 +2825,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:01:11 -0400
 Processing by BooksController#create as */*
@@ -2835,9 +2835,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:01:39 -0400
 Processing by UsersController#signin as */*
@@ -2854,9 +2854,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:02:36 -0400
 Processing by BooksController#index as HTML
@@ -2878,9 +2878,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started DELETE "/sign-out/5" for 127.0.0.1 at 2017-09-25 19:03:27 -0400
 Processing by UsersController#signout as */*
@@ -2913,9 +2913,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:06:51 -0400
 Processing by BooksController#create as */*
@@ -2923,9 +2923,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:16:44 -0400
 Processing by BooksController#index as HTML
@@ -2956,9 +2956,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
   [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:22:09 -0400
@@ -2974,9 +2974,9 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:21:in `create'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:30:11 -0400
 Processing by BooksController#index as HTML
@@ -2986,11 +2986,11 @@ Completed 200 OK in 66ms (Views: 38.3ms | ActiveRecord: 1.0ms)
 
 
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:38:45 -0400
-  
+
 SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
   def index
      ^):
-  
+
 app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:39:13 -0400
 Processing by UsersController#signin as */*
@@ -3002,25 +3002,25 @@ Completed 200 OK in 220ms (Views: 2.2ms | ActiveRecord: 57.4ms)
 
 
 Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:39:23 -0400
-  
+
 SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
   def index
      ^):
-  
+
 app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
 Started POST "/books/" for 127.0.0.1 at 2017-09-25 19:39:33 -0400
-  
+
 SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
   def index
      ^):
-  
+
 app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:40:17 -0400
-  
+
 SyntaxError (/Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
   def index
      ^):
-  
+
 app/controllers/books_controller.rb:8: syntax error, unexpected keyword_def, expecting ']'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:40:35 -0400
 Processing by BooksController#index as HTML
@@ -3033,45 +3033,45 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:42:21 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:45:02 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:45:14 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:45:37 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:46:02 -0400
 Processing by BooksController#index as HTML
@@ -3084,9 +3084,9 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-25 19:51:13 -0400
 Processing by UsersController#signin as */*
@@ -3113,9 +3113,9 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 19:51:58 -0400
 Processing by BooksController#index as HTML
@@ -3212,18 +3212,18 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 20:11:44 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-25 20:12:39 -0400
 Processing by BooksController#index as HTML
@@ -4794,9 +4794,9 @@ Completed 200 OK in 19ms (Views: 12.1ms | ActiveRecord: 1.2ms)
 
 
 Started DELETE "/delete-book/BAhJIiU3MjgwNTI1MjBhYWEwOGRmMWVmN2EzYTFmNjE4NzcwNAY6BkVG--253ac3d5f14da2d376ad9a6399daae94a42eb837" for 127.0.0.1 at 2017-09-26 09:46:50 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/delete-book/BAhJIiU3MjgwNTI1MjBhYWEwOGRmMWVmN2EzYTFmNjE4NzcwNAY6BkVG--253ac3d5f14da2d376ad9a6399daae94a42eb837"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -4834,9 +4834,9 @@ Completed 200 OK in 136ms (Views: 38.7ms | ActiveRecord: 55.6ms)
 
 
 Started DELETE "/delete-book/BAhJIiU3MjgwNTI1MjBhYWEwOGRmMWVmN2EzYTFmNjE4NzcwNAY6BkVG--253ac3d5f14da2d376ad9a6399daae94a42eb837" for 127.0.0.1 at 2017-09-26 09:48:39 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/delete-book/BAhJIiU3MjgwNTI1MjBhYWEwOGRmMWVmN2EzYTFmNjE4NzcwNAY6BkVG--253ac3d5f14da2d376ad9a6399daae94a42eb837"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -4877,9 +4877,9 @@ Completed 200 OK in 163ms (Views: 65.4ms | ActiveRecord: 67.5ms)
 
 
 Started DELETE "/delete-book/BAhJIiVmOGJiMzU1YzRhMzQzYTRlNzJmZjcxZmYwNDM0NDExYQY6BkVG--7cbbc25428d5dc959a99e39dd2dc82aa7a70b022" for 127.0.0.1 at 2017-09-26 09:53:59 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/delete-book/BAhJIiVmOGJiMzU1YzRhMzQzYTRlNzJmZjcxZmYwNDM0NDExYQY6BkVG--7cbbc25428d5dc959a99e39dd2dc82aa7a70b022"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -4913,9 +4913,9 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 09:55:08 -0400
 Processing by UsersController#signin as */*
@@ -4935,9 +4935,9 @@ Completed 200 OK in 84ms (Views: 42.5ms | ActiveRecord: 11.9ms)
 
 
 Started DELETE "/delete-book/BAhJIiU5ZjJjODA0ODExMGUzNDNkNTYzYWE5ZTgwZWYzNDg4YQY6BkVG--749050a92a39a15c688bf3642eed7a5ebdafa6f7" for 127.0.0.1 at 2017-09-26 09:55:16 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/delete-book/BAhJIiU5ZjJjODA0ODExMGUzNDNkNTYzYWE5ZTgwZWYzNDg4YQY6BkVG--749050a92a39a15c688bf3642eed7a5ebdafa6f7"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -4984,9 +4984,9 @@ Completed 200 OK in 77ms (Views: 52.6ms | ActiveRecord: 2.5ms)
 
 
 Started DELETE "/delete-book/BAhJIiUzZDQxZDhjNDE3YzM0YWMzYTU4ZjczOTM2NDkyYWFhZAY6BkVG--caca3157f97742fa1c53d1c1643cb2c58642de73" for 127.0.0.1 at 2017-09-26 10:02:52 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/delete-book/BAhJIiUzZDQxZDhjNDE3YzM0YWMzYTU4ZjczOTM2NDkyYWFhZAY6BkVG--caca3157f97742fa1c53d1c1643cb2c58642de73"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -5027,9 +5027,9 @@ Completed 200 OK in 29ms (Views: 12.0ms | ActiveRecord: 6.8ms)
 
 
 Started DELETE "/delete-book/BAhJIiVjZTAyYzY3N2RlMDVlNDk3MTAwYjgwNTk4MzZmOTJmZAY6BkVG--535b8ef0649ef243fa0ba25e17bccbd1bbf6cf40" for 127.0.0.1 at 2017-09-26 10:05:37 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/delete-book/BAhJIiVjZTAyYzY3N2RlMDVlNDk3MTAwYjgwNTk4MzZmOTJmZAY6BkVG--535b8ef0649ef243fa0ba25e17bccbd1bbf6cf40"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -5993,9 +5993,9 @@ Completed 200 OK in 284ms (Views: 6.7ms | ActiveRecord: 100.3ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 11:27:05 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6048,9 +6048,9 @@ Completed 200 OK in 144ms (Views: 1.7ms | ActiveRecord: 41.7ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 11:28:38 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6099,9 +6099,9 @@ Completed 401 Unauthorized in 306ms (ActiveRecord: 207.3ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 11:31:31 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6161,9 +6161,9 @@ Completed 200 OK in 135ms (Views: 1.1ms | ActiveRecord: 41.5ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 11:36:16 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6187,9 +6187,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 11:36:29 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6617,9 +6617,9 @@ Completed 200 OK in 811ms (Views: 129.2ms | ActiveRecord: 315.2ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 13:19:44 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6643,9 +6643,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 13:20:04 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6685,9 +6685,9 @@ Completed 401 Unauthorized in 93ms (ActiveRecord: 1.3ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 13:21:33 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6720,9 +6720,9 @@ Completed 200 OK in 95ms (Views: 1.0ms | ActiveRecord: 1.6ms)
 
 
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 13:22:13 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6746,9 +6746,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started DELETE "/sign-out/" for 127.0.0.1 at 2017-09-26 13:22:24 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/sign-out"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -6883,9 +6883,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 18ms (ActiveRecord: 3.8ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started PATCH "/books/37" for 127.0.0.1 at 2017-09-26 14:25:35 -0400
@@ -6896,9 +6896,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 9ms (ActiveRecord: 2.7ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started POST "/sign-up" for 127.0.0.1 at 2017-09-26 14:30:52 -0400
@@ -6975,9 +6975,9 @@ Completed 201 Created in 62ms (Views: 2.3ms | ActiveRecord: 42.2ms)
 
 
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 15:01:52 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -7008,9 +7008,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 9ms (ActiveRecord: 1.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 15:03:19 -0400
@@ -7072,9 +7072,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 60ms (ActiveRecord: 1.3ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 15:07:23 -0400
@@ -7102,9 +7102,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 24ms (ActiveRecord: 1.7ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 15:11:39 -0400
@@ -7271,9 +7271,9 @@ Completed 200 OK in 22ms (Views: 9.1ms | ActiveRecord: 1.4ms)
 
 
 Started DELETE "/books/" for 127.0.0.1 at 2017-09-26 15:22:11 -0400
-  
+
 ActionController::RoutingError (No route matches [DELETE] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -7397,7 +7397,7 @@ Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 
 Started GET "/books" for 127.0.0.1 at 2017-09-26 15:43:54 -0400
   [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -7405,7 +7405,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -7650,54 +7650,54 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-26 15:59:28 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-26 15:59:48 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-26 16:06:04 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-26 16:06:09 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-26 16:08:19 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 139944ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:11:in `index'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 16:15:23 -0400
 Processing by UsersController#signin as */*
@@ -7713,9 +7713,9 @@ Processing by BooksController#index as */*
 Completed 500 Internal Server Error in 39611ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:11:in `index'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
@@ -7730,9 +7730,9 @@ Completed 200 OK in 363ms (Views: 66.0ms | ActiveRecord: 52.5ms)
 
 
 Started GET "/books--header" for 127.0.0.1 at 2017-09-26 16:26:06 -0400
-  
+
 ActionController::RoutingError (No route matches [GET] "/books--header"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -7773,13 +7773,13 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 3280ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:11:in `index'
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:11:in `index'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 16:38:17 -0400
 Processing by UsersController#signin as */*
@@ -8085,9 +8085,9 @@ Completed 200 OK in 36ms (Views: 5.9ms | ActiveRecord: 4.4ms)
 
 
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 16:58:34 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -8211,9 +8211,9 @@ Completed 201 Created in 120ms (Views: 2.9ms | ActiveRecord: 98.3ms)
 
 
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 17:12:27 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -8237,9 +8237,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 17:13:04 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -8745,15 +8745,15 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 31ms (ActiveRecord: 1.5ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 18:28:50 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -8921,15 +8921,15 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 9ms (ActiveRecord: 1.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 18:40:17 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -8957,23 +8957,23 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started GET "/books" for 127.0.0.1 at 2017-09-26 18:44:11 -0400
 Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 18:45:22 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -9001,10 +9001,10 @@ puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started POST "/sign-in" for ::1 at 2017-09-26 19:19:15 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9048,10 +9048,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for ::1 at 2017-09-26 19:19:36 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9095,10 +9095,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-26 19:19:44 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9142,10 +9142,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-26 19:20:34 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9189,10 +9189,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-26 19:22:10 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9236,10 +9236,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-26 19:22:25 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9283,10 +9283,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-26 19:22:37 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9330,10 +9330,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-26 19:24:02 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9377,10 +9377,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for ::1 at 2017-09-26 19:24:35 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9424,10 +9424,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for ::1 at 2017-09-26 19:24:48 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9472,10 +9472,10 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started POST "/sign-in" for ::1 at 2017-09-26 19:25:54 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -9592,14 +9592,14 @@ Migrating to AddNewStatusToBooks (20170926235610)
 Completed 400 Bad Request in 1159875ms (ActiveRecord: 1.2ms)
 
 
-  
+
 Started GET "/books" for 127.0.0.1 at 2017-09-26 19:58:59 -0400
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:56:in `book_params'
 app/controllers/books_controller.rb:34:in `update'
   [1m[35m (39.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -9607,7 +9607,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -9646,7 +9646,7 @@ Migrating to AddNewStatusToBooks (20170926235610)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7232317327719634710)[0m
 Started GET "/books" for 127.0.0.1 at 2017-09-26 19:59:27 -0400
   [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -9654,7 +9654,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -9693,7 +9693,7 @@ Migrating to AddNewStatusToBooks (20170926235610)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7232317327719634710)[0m
 Started GET "/books" for 127.0.0.1 at 2017-09-26 20:03:01 -0400
   [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -9701,7 +9701,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -9740,7 +9740,7 @@ Migrating to AddNewStatusToBooks (20170926235610)
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7232317327719634710)[0m
 Started GET "/books" for 127.0.0.1 at 2017-09-26 20:03:36 -0400
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -9748,7 +9748,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -9790,7 +9790,7 @@ Migrating to AddStatusToBooks (20170926194251)
   [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Started GET "/books" for 127.0.0.1 at 2017-09-26 20:04:06 -0400
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -9798,7 +9798,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -9829,7 +9829,7 @@ puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/books" for 127.0.0.1 at 2017-09-26 20:07:34 -0400
   [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
+
 ActiveRecord::PendingMigrationError (
 
 Migrations are pending. To resolve this issue, run:
@@ -9837,7 +9837,7 @@ Migrations are pending. To resolve this issue, run:
         bin/rails db:migrate RAILS_ENV=development
 
 ):
-  
+
 activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
 activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
@@ -9885,9 +9885,9 @@ Processing by BooksController#index as HTML
 Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
 
 
-  
+
 NoMethodError (undefined method `books' for nil:NilClass):
-  
+
 app/controllers/books_controller.rb:10:in `index'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 20:10:53 -0400
 Processing by UsersController#signin as */*
@@ -9907,10 +9907,10 @@ Processing by BooksController#index as */*
 Completed 500 Internal Server Error in 147ms (ActiveRecord: 54.3ms)
 
 
-  
+
 NoMethodError (undefined method `status' for #<Book:0x007fb158d31920>
 Did you mean?  newstatus):
-  
+
 app/controllers/books_controller.rb:11:in `index'
 Started POST "/books/" for 127.0.0.1 at 2017-09-26 20:11:14 -0400
 Processing by BooksController#create as */*
@@ -9923,10 +9923,10 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 75ms (ActiveRecord: 45.2ms)
 
 
-  
+
 NoMethodError (undefined method `status' for #<Book:0x007fb158599398>
 Did you mean?  newstatus):
-  
+
 app/controllers/books_controller.rb:25:in `create'
 Started GET "/books/" for 127.0.0.1 at 2017-09-26 20:11:20 -0400
 Processing by BooksController#index as */*
@@ -9936,10 +9936,10 @@ Processing by BooksController#index as */*
 Completed 500 Internal Server Error in 34ms (ActiveRecord: 5.7ms)
 
 
-  
+
 NoMethodError (undefined method `status' for #<Book:0x007fb1581e2a88>
 Did you mean?  newstatus):
-  
+
 app/controllers/books_controller.rb:11:in `index'
 Started POST "/books/" for 127.0.0.1 at 2017-09-26 20:11:42 -0400
 Processing by BooksController#create as */*
@@ -9952,10 +9952,10 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 145ms (ActiveRecord: 9.8ms)
 
 
-  
+
 NoMethodError (undefined method `status' for #<Book:0x007fb159091ea8>
 Did you mean?  newstatus):
-  
+
 app/controllers/books_controller.rb:25:in `create'
 Started GET "/books/" for 127.0.0.1 at 2017-09-26 20:11:55 -0400
 Processing by BooksController#index as */*
@@ -9965,10 +9965,10 @@ Processing by BooksController#index as */*
 Completed 500 Internal Server Error in 89ms (ActiveRecord: 11.7ms)
 
 
-  
+
 NoMethodError (undefined method `status' for #<Book:0x007fb158b42c40>
 Did you mean?  newstatus):
-  
+
 app/controllers/books_controller.rb:11:in `index'
 Started POST "/books/" for 127.0.0.1 at 2017-09-26 20:13:27 -0400
 Processing by BooksController#create as */*
@@ -9981,10 +9981,10 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 68ms (ActiveRecord: 7.0ms)
 
 
-  
+
 NoMethodError (undefined method `status' for #<Book:0x007fb15805a558>
 Did you mean?  newstatus):
-  
+
 app/controllers/books_controller.rb:25:in `create'
 Started POST "/books/" for 127.0.0.1 at 2017-09-26 20:13:32 -0400
 Processing by BooksController#create as */*
@@ -9997,10 +9997,10 @@ Processing by BooksController#create as */*
 Completed 500 Internal Server Error in 62ms (ActiveRecord: 14.2ms)
 
 
-  
+
 NoMethodError (undefined method `status' for #<Book:0x007fb1585c8120>
 Did you mean?  newstatus):
-  
+
 app/controllers/books_controller.rb:25:in `create'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 20:14:23 -0400
 Processing by UsersController#signin as */*
@@ -10050,9 +10050,9 @@ Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 21:21:08 -0400
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 21:21:08 -0400
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 21:21:08 -0400
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 21:21:08 -0400
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:56:in `book_params'
 app/controllers/books_controller.rb:34:in `update'
 Processing by UsersController#signin as */*
@@ -10375,11 +10375,11 @@ Completed 400 Bad Request in 1315224ms (ActiveRecord: 5.0ms)
 
 
 Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:01:26 -0400
-  
+
 Processing by BooksController#update as */*
 ActionController::ParameterMissing (param is missing or the value is empty: book):
   Parameters: {"id"=>"73"}
-  
+
 app/controllers/books_controller.rb:56:in `book_params'
 app/controllers/books_controller.rb:34:in `update'
   [1m[36mUser Load (85.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "dff351f918f9a29b82c71cedc48c0ccf"], ["LIMIT", 1]]
@@ -10387,9 +10387,9 @@ app/controllers/books_controller.rb:34:in `update'
 Completed 400 Bad Request in 74303ms (ActiveRecord: 110.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:56:in `book_params'
 app/controllers/books_controller.rb:34:in `update'
 Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:02:41 -0400
@@ -10401,9 +10401,9 @@ Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:02:41 -0400
 Completed 400 Bad Request in 65094ms (ActiveRecord: 29.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:56:in `book_params'
 app/controllers/books_controller.rb:34:in `update'
 Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:03:46 -0400
@@ -10414,9 +10414,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 102ms (ActiveRecord: 10.7ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Processing by BooksController#update as */*
@@ -10426,9 +10426,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 84ms (ActiveRecord: 10.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:04:33 -0400
@@ -10439,9 +10439,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 20ms (ActiveRecord: 9.7ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:19:18 -0400
@@ -10452,9 +10452,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 102ms (ActiveRecord: 22.3ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:19:22 -0400
@@ -10465,9 +10465,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 24ms (ActiveRecord: 5.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started PATCH "/books/73" for 127.0.0.1 at 2017-09-26 22:19:25 -0400
@@ -10478,9 +10478,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 26ms (ActiveRecord: 9.9ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started GET "/books/" for 127.0.0.1 at 2017-09-26 22:19:50 -0400
@@ -10525,9 +10525,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 29ms (ActiveRecord: 2.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started GET "/books/" for 127.0.0.1 at 2017-09-26 22:20:16 -0400
@@ -10563,9 +10563,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 28ms (ActiveRecord: 7.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:55:in `book_params'
 app/controllers/books_controller.rb:33:in `update'
 Started DELETE "/sign-out/5" for 127.0.0.1 at 2017-09-26 22:40:46 -0400
@@ -10661,15 +10661,15 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 19ms (ActiveRecord: 1.3ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 22:49:03 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -10693,9 +10693,9 @@ puma (3.7.0) lib/puma/server.rb:415:in `process_client'
 puma (3.7.0) lib/puma/server.rb:275:in `block in run'
 puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-26 22:49:39 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -10726,9 +10726,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 105ms (ActiveRecord: 5.6ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 22:49:59 -0400
@@ -10756,9 +10756,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 15ms (ActiveRecord: 4.6ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-26 22:51:57 -0400
@@ -10968,9 +10968,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 11ms (ActiveRecord: 4.9ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 09:50:49 -0400
@@ -10998,9 +10998,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 133ms (ActiveRecord: 84.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 09:54:00 -0400
@@ -11045,9 +11045,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 14ms (ActiveRecord: 2.4ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 09:56:47 -0400
@@ -11075,9 +11075,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 14ms (ActiveRecord: 4.9ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 10:07:05 -0400
@@ -11112,9 +11112,9 @@ Completed 201 Created in 58ms (Views: 3.0ms | ActiveRecord: 10.3ms)
 
 
 Started PATCH "/books/" for 127.0.0.1 at 2017-09-27 10:12:58 -0400
-  
+
 ActionController::RoutingError (No route matches [PATCH] "/books"):
-  
+
 actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
 railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
@@ -11174,9 +11174,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 16ms (ActiveRecord: 1.5ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 10:21:09 -0400
@@ -11204,9 +11204,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 12ms (ActiveRecord: 1.4ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started PATCH "/books/76" for 127.0.0.1 at 2017-09-27 10:21:43 -0400
@@ -11217,9 +11217,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 6ms (ActiveRecord: 0.8ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 10:22:25 -0400
@@ -11247,9 +11247,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 22ms (ActiveRecord: 13.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 10:30:32 -0400
@@ -11277,9 +11277,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 13ms (ActiveRecord: 3.4ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started GET "/books/" for 127.0.0.1 at 2017-09-27 10:31:02 -0400
@@ -11341,9 +11341,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 17ms (ActiveRecord: 5.5ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 11:14:14 -0400
@@ -11397,9 +11397,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 13ms (ActiveRecord: 4.3ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 11:17:31 -0400
@@ -11427,9 +11427,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 14ms (ActiveRecord: 5.9ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 11:18:59 -0400
@@ -11457,9 +11457,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 17ms (ActiveRecord: 5.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 11:23:51 -0400
@@ -11572,9 +11572,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 64ms (ActiveRecord: 1.5ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 11:36:00 -0400
@@ -11806,9 +11806,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 19ms (ActiveRecord: 2.2ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 11:56:02 -0400
@@ -11934,9 +11934,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 13ms (ActiveRecord: 3.0ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 12:22:28 -0400
@@ -12144,9 +12144,9 @@ Processing by BooksController#update as */*
 Completed 400 Bad Request in 17ms (ActiveRecord: 5.1ms)
 
 
-  
+
 ActionController::ParameterMissing (param is missing or the value is empty: book):
-  
+
 app/controllers/books_controller.rb:54:in `book_params'
 app/controllers/books_controller.rb:32:in `update'
 Started POST "/sign-in" for 127.0.0.1 at 2017-09-27 12:40:26 -0400
@@ -12519,10 +12519,10 @@ DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is depr
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started POST "/sign-up" for ::1 at 2017-09-27 21:48:53 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12566,10 +12566,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-27 21:49:04 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12613,10 +12613,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-27 21:49:12 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12661,10 +12661,10 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for ::1 at 2017-09-27 21:50:32 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12709,10 +12709,10 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started POST "/sign-up" for ::1 at 2017-09-27 21:58:58 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12756,10 +12756,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-27 21:59:37 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12803,10 +12803,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-27 22:01:00 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12850,10 +12850,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-27 22:03:11 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12897,10 +12897,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "//sign-up" for ::1 at 2017-09-27 22:03:29 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12944,10 +12944,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "//sign-up" for ::1 at 2017-09-27 22:04:29 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -12991,10 +12991,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "//sign-in" for ::1 at 2017-09-27 22:04:47 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13038,10 +13038,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "//sign-in" for ::1 at 2017-09-27 22:06:04 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13085,10 +13085,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "//sign-up" for ::1 at 2017-09-27 22:06:15 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13132,10 +13132,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-27 22:07:29 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13179,10 +13179,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for ::1 at 2017-09-27 22:07:42 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13226,10 +13226,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for ::1 at 2017-09-27 22:09:50 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13273,10 +13273,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-27 22:11:25 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13320,10 +13320,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-27 22:13:09 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13368,10 +13368,10 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for ::1 at 2017-09-27 23:07:04 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13415,10 +13415,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-27 23:13:37 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13463,10 +13463,10 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for ::1 at 2017-09-27 23:40:16 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13510,10 +13510,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-27 23:42:06 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13557,10 +13557,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for ::1 at 2017-09-27 23:45:21 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13604,10 +13604,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-27 23:57:24 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13651,10 +13651,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-28 00:00:37 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13698,10 +13698,10 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-28 00:06:24 -0400
-  
+
 ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
 ):
-  
+
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
 activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
@@ -13747,12 +13747,12 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for ::1 at 2017-09-28 00:34:14 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -13798,12 +13798,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-28 00:37:07 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -13850,12 +13850,12 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for ::1 at 2017-09-28 00:48:41 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -13901,12 +13901,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-28 00:49:58 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -13952,12 +13952,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started GET "/" for ::1 at 2017-09-28 00:59:27 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14005,12 +14005,12 @@ puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for ::1 at 2017-09-28 01:44:25 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14057,12 +14057,12 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started GET "/" for ::1 at 2017-09-28 06:22:46 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14108,12 +14108,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-28 06:24:26 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14159,12 +14159,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-28 06:24:37 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14210,12 +14210,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-28 06:25:08 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14262,12 +14262,12 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started POST "/sign-in" for ::1 at 2017-09-30 13:24:30 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14314,12 +14314,12 @@ puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
 Started POST "/sign-up" for ::1 at 2017-09-30 13:31:22 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14365,12 +14365,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-up" for ::1 at 2017-09-30 13:40:19 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14416,12 +14416,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-30 13:40:33 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14467,12 +14467,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-30 13:40:41 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14518,12 +14518,12 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 Started POST "/sign-in" for ::1 at 2017-09-30 14:18:38 -0400
-  
+
 PG::ConnectionBad (could not connect to server: No such file or directory
 	Is the server running locally and accepting
 	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
 ):
-  
+
 pg (0.21.0) lib/pg.rb:56:in `initialize'
 pg (0.21.0) lib/pg.rb:56:in `new'
 pg (0.21.0) lib/pg.rb:56:in `connect'
@@ -14569,3 +14569,339 @@ puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started GET "/" for ::1 at 2017-09-30 22:27:17 -0400
+
+ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
+):
+
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-09-30 22:32:19 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
+):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started GET "/books" for ::1 at 2017-09-30 23:07:39 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
+):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/sign-in" for ::1 at 2017-09-30 23:08:09 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
+):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/books" for ::1 at 2017-09-30 23:21:06 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
+):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started GET "/books" for ::1 at 2017-09-30 23:21:56 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
+):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started POST "/sign-in" for ::1 at 2017-09-30 23:24:32 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "book-tracker-app_development" does not exist
+):
+  
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:699:in `rescue in connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:695:in `connect'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.4) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.1) lib/rack/cors.rb:93:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
