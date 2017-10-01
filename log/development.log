@@ -14953,3 +14953,82 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/aliciapflaumer/wdi/projects/full-stack-project/gotReads-backend/config/initializers/new_framework_defaults.rb:18)
+Started GET "/books" for ::1 at 2017-10-01 13:39:37 -0400
+  [1m[35m (31.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:9:in `index'
+Started GET "/" for ::1 at 2017-10-01 13:39:52 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/aliciapflaumer/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/aliciapflaumer/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (9.3ms)
+Completed 200 OK in 169ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2017-10-01 13:40:00 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:9:in `index'
+Started POST "/sign-in" for ::1 at 2017-10-01 13:40:36 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"green3@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "green3@email.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 147ms (ActiveRecord: 6.2ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 13:49:23 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.6ms)
+
+
+Started POST "/sign-up" for ::1 at 2017-10-01 13:49:38 -0400
+Processing by UsersController#signup as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (21.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "token", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "runner@email.com"], ["token", "593f3a324610a75a567aee4855b6b3c1"], ["password_digest", "$2a$10$X3qcqt5D5Cd4dHGkCLu.Cuna5VJrXgUQcDrP.A8gBN4TEOd6DOnsy"], ["created_at", "2017-10-01 17:49:38.507792"], ["updated_at", "2017-10-01 17:49:38.507792"]]
+  [1m[35m (21.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND ("users"."id" != $2) LIMIT $3[0m  [["email", "runner@email.com"], ["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Json (2.74ms)
+Completed 201 Created in 685ms (Views: 147.2ms | ActiveRecord: 49.1ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-01 13:49:53 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (23.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (51.1ms)[0m  [1m[33mUPDATE "users" SET "token" = '20cf0b33212e5cd6f4844330add36a6e', "updated_at" = '2017-10-01 17:49:53.581249' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (72.75ms)
+Completed 200 OK in 327ms (Views: 73.5ms | ActiveRecord: 75.0ms)
+
+
+Started GET "/books/" for ::1 at 2017-10-01 13:49:56 -0400
+Processing by BooksController#index as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "20cf0b33212e5cd6f4844330add36a6e"], ["LIMIT", 1]]
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."user_id" = $1[0m  [["user_id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (0.79ms)
+Completed 200 OK in 118ms (Views: 12.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/books" for ::1 at 2017-10-01 13:50:15 -0400
+Processing by BooksController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `books' for nil:NilClass):
+  
+app/controllers/books_controller.rb:9:in `index'
