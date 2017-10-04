@@ -17346,3 +17346,31 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/sign-out/1" for ::1 at 2017-10-04 14:48:33 -0400
+Processing by UsersController#signout as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "2ed39e0ee1e786a838861cfb63e61456"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (46.8ms)[0m  [1m[33mUPDATE "users" SET "token" = 'd547e2cad1ce5c5455a922bc98789eeb', "updated_at" = '2017-10-04 18:48:33.750607' WHERE "users"."id" = $1[0m  [["id", 1]]
+Completed 204 No Content in 76ms (ActiveRecord: 48.6ms)
+
+
+Started POST "/sign-in" for ::1 at 2017-10-04 14:53:06 -0400
+Processing by UsersController#signin as */*
+  Parameters: {"credentials"=>{"email"=>"runner@email.com", "password"=>"[FILTERED]"}, "submit"=>"Sign in"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "runner@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "token" = 'cc8e14ffda8504f025641b98f5170ff7', "updated_at" = '2017-10-04 18:53:06.385835' WHERE "users"."id" = $1[0m  [["id", 1]]
+[active_model_serializers] Rendered UserLoginSerializer with ActiveModelSerializers::Adapter::Json (2.25ms)
+Completed 200 OK in 146ms (Views: 6.9ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/books/" for ::1 at 2017-10-04 14:53:07 -0400
+Processing by BooksController#create as */*
+  Parameters: {"book"=>{"title"=>"", "author"=>"", "newstatus"=>""}, "submit"=>"Create book"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."token" = $1 LIMIT $2[0m  [["token", "cc8e14ffda8504f025641b98f5170ff7"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActiveModel::Errors (0.31ms)
+Completed 422 Unprocessable Entity in 115ms (Views: 3.5ms | ActiveRecord: 2.4ms)
+
+
